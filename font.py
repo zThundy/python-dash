@@ -9,9 +9,8 @@ class Font:
         self._screen = SCREEN
         pygame.font.init()
     
-    # deconstructor
-    # def __del__(self):
-    #     print("deconstructor")
+    def __del__(self):
+        print("[CLASS] Font class destroyed")
 
     def register_text(self, size = 100, text = False, color = (255, 255, 255)):
         tmp = {}
