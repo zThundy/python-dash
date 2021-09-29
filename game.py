@@ -29,12 +29,10 @@ class Game:
             self._level.draw_current_level()
             # render all fonts on screen
             self._font.draw_everything()
-            # render the player sprite
-            self._player.render_player()
             # update display
             pygame.display.update()
             # limit the number of fps to 60
-            self._clock.tick(60)
+            self._clock.tick(256)
 
     def event_handler(self):
         while self._thread:
